@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Database1ModelStoreContainer" CdmEntityContainer="Database1Entities1">
+    <EntitySetMapping Name="Table">
+      <EntityTypeMapping TypeName="Database1Model.Table">
+        <MappingFragment StoreEntitySet="Table">
+          <ScalarProperty Name="ogr_id" ColumnName="ogr_id" />
+          <ScalarProperty Name="ogr_ad" ColumnName="ogr_ad" />
+          <ScalarProperty Name="ogr_soyad" ColumnName="ogr_soyad" />
+          <ScalarProperty Name="ogr_mail" ColumnName="ogr_mail" />
+          <ScalarProperty Name="ogr_foto" ColumnName="ogr_foto" />
+          <ScalarProperty Name="ogr_adres" ColumnName="ogr_adres" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

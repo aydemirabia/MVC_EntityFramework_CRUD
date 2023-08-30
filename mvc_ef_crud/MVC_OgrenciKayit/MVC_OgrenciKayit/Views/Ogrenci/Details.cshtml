@@ -1,0 +1,61 @@
+﻿@model MVC_OgrenciKayit.Models.Table
+
+@{
+    ViewBag.Title = "Details";
+    //Layout = "~/Views/Tables/Index.cshtml";
+}
+
+<h3>ÖĞRENCİ DETAY BİLGİLERİ</h3>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ogr_ad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ogr_ad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ogr_soyad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ogr_soyad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ogr_mail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ogr_mail)
+        </dd>
+
+       @*<dt>
+            @Html.DisplayNameFor(model => model.ogr_foto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ogr_foto)
+        </dd>*@
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ogr_adres)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ogr_adres)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Düzenle", "Edit", new { id = Model.ogr_id }) |
+    @Html.ActionLink("Öğrenci Listesi'ne Git", "Index")
+</p>
+@*<dt>
+    <img src="@Model.ogr_foto" width="100" height="100"/>
+</dt>*@
